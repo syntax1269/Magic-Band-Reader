@@ -68,180 +68,57 @@ void setup() {
 }
 
 //*****************************************************************************************//
-void disney(){
-  
-  pixels.setPixelColor(23, pixels.Color(0,25,0));
+void disney() {
+
+  pixels.setPixelColor(PIXEL_OFFSET, pixels.Color(0, 25, 0));
   pixels.show();
   delay(50);
-  pixels.setPixelColor(23, pixels.Color(0,0,0));
-  pixels.setPixelColor(22, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(22, pixels.Color(0,0,0));
-  pixels.setPixelColor(21, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(21, pixels.Color(0,0,0));
-  pixels.setPixelColor(20, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(20, pixels.Color(0,0,0));
-  pixels.setPixelColor(19, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(19, pixels.Color(0,0,0));
-  pixels.setPixelColor(18, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(18, pixels.Color(0,0,0));
-  pixels.setPixelColor(17, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(17, pixels.Color(0,0,0));
-  pixels.setPixelColor(16, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(16, pixels.Color(0,0,0));
-  pixels.setPixelColor(15, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(15, pixels.Color(0,0,0));
-  pixels.setPixelColor(14, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(14, pixels.Color(0,0,0));
-  pixels.setPixelColor(13, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(13, pixels.Color(0,0,0));
-  pixels.setPixelColor(12, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(12, pixels.Color(0,0,0));
-  pixels.setPixelColor(11, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50); 
-  pixels.setPixelColor(11, pixels.Color(0,0,0));
-  pixels.setPixelColor(10, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50); 
-  pixels.setPixelColor(10, pixels.Color(0,0,0));
-  pixels.setPixelColor(9, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(9, pixels.Color(0,0,0));
-  pixels.setPixelColor(8, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(8, pixels.Color(0,0,0));
-  pixels.setPixelColor(7, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(7, pixels.Color(0,0,0));
-  pixels.setPixelColor(6, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(6, pixels.Color(0,0,0));
-  pixels.setPixelColor(5, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);  
-  pixels.setPixelColor(5, pixels.Color(0,0,0));
-  pixels.setPixelColor(4, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(4, pixels.Color(0,0,0));
-  pixels.setPixelColor(3, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(3, pixels.Color(0,0,0));
-  pixels.setPixelColor(2, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(2, pixels.Color(0,0,0));
-  pixels.setPixelColor(1, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(1, pixels.Color(0,0,0));
-  pixels.setPixelColor(0, pixels.Color(0,25,0));
-  pixels.show();
-  delay(50);
-  pixels.setPixelColor(0, pixels.Color(0,0,0));
+  for ( int ii = PIXEL_OFFSET + 1; ii < NUMPIXELS; ++ii )
+  {
+    pixels.setPixelColor(ii - 1, pixels.Color(0, 0, 0));
+    pixels.setPixelColor(ii, pixels.Color(0, 25, 0));
+    pixels.show();
+    delay(50);
+  }
+  pixels.setPixelColor(NUMPIXELS - 1, pixels.Color(0, 0, 0));
   pixels.show();
   delay(50);
 }
 
 void disneyaccess()
 {
-//  player.play(1); 
+  //  player.play(1);
 
- pixels.setPixelColor(0, pixels.Color(0,25,0));
- pixels.setPixelColor(1, pixels.Color(0,25,0));
- pixels.setPixelColor(2, pixels.Color(0,25,0));
- pixels.setPixelColor(3, pixels.Color(0,25,0));
- pixels.setPixelColor(4, pixels.Color(0,25,0));
- pixels.setPixelColor(5, pixels.Color(0,25,0));
- pixels.setPixelColor(6, pixels.Color(0,25,0));
- pixels.setPixelColor(7, pixels.Color(0,25,0));
- pixels.setPixelColor(8, pixels.Color(0,25,0));
- pixels.setPixelColor(9, pixels.Color(0,25,0));
- pixels.setPixelColor(10, pixels.Color(0,25,0));
- pixels.setPixelColor(11, pixels.Color(0,25,0));
- pixels.setPixelColor(12, pixels.Color(0,25,0));
- pixels.setPixelColor(13, pixels.Color(0,25,0));
- pixels.setPixelColor(14, pixels.Color(0,25,0));
- pixels.setPixelColor(15, pixels.Color(0,25,0));
- pixels.setPixelColor(16, pixels.Color(0,25,0));
- pixels.setPixelColor(17, pixels.Color(0,25,0));
- pixels.setPixelColor(18, pixels.Color(0,25,0));
- pixels.setPixelColor(19, pixels.Color(0,25,0));
- pixels.setPixelColor(20, pixels.Color(0,25,0));
- pixels.setPixelColor(21, pixels.Color(0,25,0));
- pixels.setPixelColor(22, pixels.Color(0,25,0));
- pixels.setPixelColor(23, pixels.Color(0,25,0));
- pixels.show();
- 
- if(digitalRead(relay) == HIGH)
-    {
-   digitalWrite(relay,LOW);
-   Serial.println("Relay off"); 
-   }
-   else
-   {
-   digitalWrite(relay,HIGH);
-   Serial.println("Relay on"); 
-   }
+  for ( int ii = PIXEL_OFFSET; ii < NUMPIXELS; ++ii )
+  {
+    pixels.setPixelColor(ii, pixels.Color(0, 25, 0));
+  }
+  pixels.show();
+
+  if (digitalRead(relay) == HIGH)
+  {
+    digitalWrite(relay, LOW);
+    Serial.println("Relay off");
+  }
+  else
+  {
+    digitalWrite(relay, HIGH);
+    Serial.println("Relay on");
+  }
 
 
 }
 
 void disneyoff()
 {
-pixels.setPixelColor(0, pixels.Color(0,0,0));
- pixels.setPixelColor(1, pixels.Color(0,0,0));
- pixels.setPixelColor(2, pixels.Color(0,0,0));
- pixels.setPixelColor(3, pixels.Color(0,0,0));
- pixels.setPixelColor(4, pixels.Color(0,0,0));
- pixels.setPixelColor(5, pixels.Color(0,0,0));
- pixels.setPixelColor(6, pixels.Color(0,0,0));
- pixels.setPixelColor(7, pixels.Color(0,0,0));
- pixels.setPixelColor(8, pixels.Color(0,0,0));
- pixels.setPixelColor(9, pixels.Color(0,0,0));
- pixels.setPixelColor(10, pixels.Color(0,0,0));
- pixels.setPixelColor(11, pixels.Color(0,0,0));
- pixels.setPixelColor(12, pixels.Color(0,0,0));
- pixels.setPixelColor(13, pixels.Color(0,0,0));
- pixels.setPixelColor(14, pixels.Color(0,0,0));
- pixels.setPixelColor(15, pixels.Color(0,0,0));
- pixels.setPixelColor(16, pixels.Color(0,0,0));
- pixels.setPixelColor(17, pixels.Color(0,0,0));
- pixels.setPixelColor(18, pixels.Color(0,0,0));
- pixels.setPixelColor(19, pixels.Color(0,0,0));
- pixels.setPixelColor(20, pixels.Color(0,0,0));
- pixels.setPixelColor(21, pixels.Color(0,0,0));
- pixels.setPixelColor(22, pixels.Color(0,0,0));
- pixels.setPixelColor(23, pixels.Color(0,0,0));
- pixels.show();
+  for ( int ii = 0; ii < NUMPIXELS; ++ii )
+  {
+    pixels.setPixelColor(ii, pixels.Color(0, 0, 0));
+  }
+  pixels.show();
 }
+
+
 void loop() {
 
   // Prepare key - all keys are set to FFFFFFFFFFFFh at chip delivery from the factory.
